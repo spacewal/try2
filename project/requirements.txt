@@ -5,3 +5,4 @@ mplfinance
 streamlit
 pandas
 numpy
+scikit-learn
