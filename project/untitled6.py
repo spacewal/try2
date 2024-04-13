@@ -41,7 +41,7 @@ def analyze_stock(ticker):
     model = build_model(X_train)
 
     early_stopping = EarlyStopping(monitor='val_loss', patience=10)
-    model_checkpoint = ModelCheckpoint('best_model.h5', save_best_only=True, monitor='val_loss')
+    model_checkpoint = ModelCheckpoint('best_model.keras', save_best_only=True, monitor='val_loss')
     reduce_lr = ReduceLROnPlateau(monitor='val_loss', factor=0.1, patience=5)
     tensorboard = TensorBoard(log_dir='./logs')
     csv_logger = CSVLogger('training_log.csv')
