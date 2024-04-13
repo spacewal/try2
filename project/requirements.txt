@@ -1,0 +1,7 @@
+tensorflow
+keras
+yfinance
+mplfinance
+streamlit
+pandas
+numpy
